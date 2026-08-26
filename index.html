@@ -586,10 +586,12 @@
           <div class="error">
             <h3>Unable to load projects</h3>
             <p>
-              Please try again later.
-            </p>
+  Please try again later.
+  <button id="retry-btn" class="button button-primary">Retry</button>
+</p>
           </div>
         `;
+        document.getElementById("retry-btn").addEventListener("click", loadRepositories);
 
       }
 
